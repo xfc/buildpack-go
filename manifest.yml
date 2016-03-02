@@ -1,0 +1,10 @@
+---
+applications:
+- name: safehaven-api
+  env:
+    PORT: 8080
+  command: ./src/api/safehaven-api -key 694136be-d11f-4195-9b1a-1fc3d8f56381 -port 8080
+  buildpack: https://github.com/cdinro73/heroku-buildpack-go.git 
+  memory: 512m
+  host: safehaven-api10023
+  instances: 2
