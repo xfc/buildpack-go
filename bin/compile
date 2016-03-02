@@ -263,9 +263,11 @@ case $TOOL in
         fi
 
         cd $build
+        pwd
         step "Running: gb build ${FLAGS[@]}"
         #gb build "${FLAGS[@]}"
         cd ./src
+        pwd
         make -C api
         step "Post Compile Cleanup"
         #for f in bin/*-heroku; do mv "$f" "${f/-heroku}"; done
