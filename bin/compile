@@ -271,10 +271,10 @@ case $TOOL in
         make -C api
         step "Show the file we generated"
         pwd
-        ls
+        ls -all
         cd ./api 
         pwd
-        ls
+        ls -all
 
         step "Post Compile Cleanup"
         #for f in bin/*-heroku; do mv "$f" "${f/-heroku}"; done
