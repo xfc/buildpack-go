@@ -269,6 +269,13 @@ case $TOOL in
         cd ./src
         pwd
         make -C api
+        step "Show the file we generated"
+        pwd
+        ls
+        cd ./api 
+        pwd
+        ls
+
         step "Post Compile Cleanup"
         #for f in bin/*-heroku; do mv "$f" "${f/-heroku}"; done
         #rm -rf pkg
